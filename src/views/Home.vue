@@ -1,7 +1,6 @@
 <template>
   <div class="home flex flex-col justify-center items-center">
-    <img alt="Vue logo" src="../assets/logo.png" class="w-12" />
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App" />
+    <HelloWorld class="w-full" />
   </div>
 </template>
 

@@ -12,7 +12,7 @@ module.exports = {
         sans: ['Jost', ...defaultTheme.fontFamily.sans],
       },
     },
-    colors
+    colors,
   },
   variants: {
     extend: {},

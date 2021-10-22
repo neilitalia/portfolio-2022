@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" class="bg-gradient-to-b from-black to-coolGray-900 h-screen">
     <NavBar />
     <router-view />
   </div>

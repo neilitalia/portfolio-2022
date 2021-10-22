@@ -14,13 +14,21 @@
       <h1 class="text-coolGray-900 font-bold">Neil Italia</h1>
     </div>
     <div class="text-coolGray-900">
-      <router-link to="/" class="text-coolGray-900 hover:text-coolGray-100"
-        >Home</router-link
+      <router-link
+        v-for="link in links"
+        :key="link.to"
+        :to="link.to"
+        class="
+          mx-4
+          text-coolGray-900
+          hover:text-amber-100
+          transition
+          duration-200
+          ease-in-out
+        "
       >
-      |
-      <router-link to="/about" class="text-coolGray-900 hover:text-coolGray-100"
-        >About</router-link
-      >
+        {{ link.text }}
+      </router-link>
     </div>
   </div>
 </template>
@@ -28,5 +36,20 @@
 <script>
 export default {
   name: "NavBar",
+  // eslint-disable-next-line
+  data() {
+    return {
+      links: [
+        {
+          to: "/",
+          text: "Home",
+        },
+        {
+          to: "/about",
+          text: "About",
+        },
+      ],
+    };
+  },
 };
 </script>
