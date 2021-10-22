@@ -1,4 +1,5 @@
-# portfolio-2022
+# Neil Italia Portfolio '22
+[![Netlify Status](https://api.netlify.com/api/v1/badges/6c7582c9-c94d-448f-8533-67ad47fa49dc/deploy-status)](https://app.netlify.com/sites/ecstatic-hugle-de9ac5/deploys)
 
 ## Project setup
 ```
