@@ -1,7 +1,9 @@
 <template>
-  <div id="app" class="bg-gradient-to-b from-black to-coolGray-900 h-screen">
+  <div id="app" class="bg-gradient-to-b from-darkestBlue to-darkTeal h-screen">
     <NavBar />
-    <router-view />
+    <transition name="fade">
+      <router-view class="view" />
+    </transition>
   </div>
 </template>
 
@@ -29,5 +31,22 @@ export default Vue.extend({
 
 #nav a {
   font-weight: bold;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.3s ease;
+}
+
+.fade-enter,
+.fade-leave-active {
+  opacity: 0;
+}
+
+.view {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  transition: all 0.3s ease;
 }
 </style>
