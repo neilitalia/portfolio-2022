@@ -44,7 +44,7 @@ export default Vue.extend({
           text: "Back-End Ninja",
         },
         {
-          text: "Painter",
+          text: "Designer + Developer Unicorn",
         },
       ],
     };
