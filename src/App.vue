@@ -2,7 +2,7 @@
   <div id="app" class="bg-gradient-to-b from-darkestBlue to-darkTeal h-screen">
     <NavBar />
     <transition name="fade">
-      <router-view class="view" />
+      <router-view class="view ml-36" />
     </transition>
   </div>
 </template>

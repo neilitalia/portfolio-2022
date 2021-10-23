@@ -1,9 +1,8 @@
 <template>
   <div class="hello text-amber-100 flex flex-col justify-evenly items-center">
-    <div>
-      <h1 class="text-5xl font-bold mt-48">Neil Italia</h1>
-    </div>
-    <div>
+    <div class="flex flex-col justify-evenly items-flex-start mt-40">
+      <h3 class="text-xl font-medium">Hey there! My name is</h3>
+      <h1 class="text-5xl font-bold">Neil Italia.</h1>
       <ul>
         <li v-for="(title, i) in titles" :key="i" class="text-xl">
           {{ title.text }}
