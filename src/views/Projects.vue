@@ -1,5 +1,7 @@
 <template>
-  <h1 class="text-5xl text-amber-100 font-bold">Projects</h1>
+  <div id="projects" class="flex flex-col justify-center items-center h-screen">
+    <h1 class="text-5xl text-amber-100 font-bold">Projects</h1>
+  </div>
 </template>
 
 <script>

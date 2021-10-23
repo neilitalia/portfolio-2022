@@ -1,10 +1,14 @@
 <template>
-  <div class="hello text-amber-100 flex flex-col justify-evenly items-center">
-    <div class="flex flex-col justify-evenly items-flex-start mt-40">
+  <div class="text-amber-100 flex flex-row justify-center items-center">
+    <div class="flex flex-col justify-center items-flex-start mt-40">
       <h3 class="text-xl font-medium">Hey there! My name is</h3>
-      <h1 class="text-5xl font-bold">Neil Italia.</h1>
+      <h1 class="text-5xl font-bold text-amber-100 underline">Neil Italia.</h1>
       <ul>
-        <li v-for="(title, i) in titles" :key="i" class="text-xl">
+        <li
+          v-for="(title, i) in titles"
+          :key="i"
+          class="text-xl text-amber-400"
+        >
           {{ title.text }}
         </li>
       </ul>

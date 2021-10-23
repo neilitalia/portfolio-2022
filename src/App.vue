@@ -1,20 +1,29 @@
 <template>
   <div id="app" class="bg-gradient-to-b from-darkestBlue to-darkTeal h-screen">
     <NavBar />
-    <transition name="fade">
-      <router-view class="view ml-36" />
-    </transition>
+    <Home />
+    <About />
+    <Projects />
+    <Contact />
   </div>
 </template>
 
 <script>
 import Vue from "vue";
 import NavBar from "@/components/NavBar.vue";
+import Home from "@/views/Home.vue";
+import About from "@/views/About.vue";
+import Projects from "@/views/Projects.vue";
+import Contact from "@/views/Contact.vue";
 
 export default Vue.extend({
   name: "App",
   components: {
     NavBar,
+    Home,
+    About,
+    Projects,
+    Contact,
   },
 });
 </script>
@@ -23,10 +32,6 @@ export default Vue.extend({
 #app {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-#nav {
-  padding: 30px;
 }
 
 #nav a {
