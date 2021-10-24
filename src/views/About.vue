@@ -15,10 +15,10 @@
       non-profit.
     </p>
     <p class="text-xl text-amber-400 w-96 my-5">
-      With my background in the service industry as a restaurant server and my
-      client-facing experience, I want to make digital customer experiences more
-      engaging, accessible, and memorable through efficient system design — from
-      front-end interfaces to back-end business logic.
+      With my background in the service industry and my client-facing
+      experience, I want to make digital customer experiences more engaging,
+      accessible, and memorable through efficient system design — from front-end
+      interfaces to back-end business logic.
     </p>
   </div>
 </template>

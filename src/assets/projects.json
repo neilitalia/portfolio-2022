@@ -21,7 +21,7 @@
     "description": "A social networking site collaboratively built around user generated music & album reviews",
     "sourceCode": "https://bit.ly/reviewr-github",
     "liveDemo": "https://bit.ly/reviewr-app",
-    "techStack": ["React", "Express", "Node.js", "PostgreSQL", "Sequelize", "JWT", "Deezer API"],
+    "techStack": ["React", "Express", "Node.js", "PostgreSQL", "Sequelize", "JWT", "Deezer API", "REST"],
     "features": [
       "displays album reviews on a feed built with React",
       "securely authenticates users with JWT verified by a Node.js and Express server",
@@ -36,7 +36,7 @@
     "description": "An inter-planetary flight booking system inspired by and designed for SpaceX",
     "sourceCode": "https://bit.ly/spacex-flights-github",
     "liveDemo": "https://bit.ly/spacex-flights-app",
-    "techStack": ["React", "Express", "Node.js", "MongoDB", "Mongoose"],
+    "techStack": ["React", "Express", "Node.js", "MongoDB", "Mongoose", "REST"],
     "features": [
       "displays flights, flight information and ticket information on a React front-end connected to a Node.js and express back-end",
       "search algorithm queries either flight origin, flight destination, or both, based on data stored in a MongoDB cloud database",
