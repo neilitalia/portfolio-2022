@@ -16,8 +16,14 @@
       <img :src="$props.project.image" alt="" class="rounded-t-lg" />
     </div>
     <div class="p-5 text-emerald-900">
-      <h1 class="text-xl font-bold">{{ $props.project.title }}</h1>
+      <h1 class="text-2xl font-bold">{{ $props.project.title }}</h1>
       <h3 class="text-lg">{{ $props.project.description }}</h3>
+      <h3 class="text-lg">Features:</h3>
+      <ul class="list-disc list-outside ml-5">
+        <li v-for="feature in $props.project.features" :key="feature">
+          {{ feature }}
+        </li>
+      </ul>
       <div class="flex flex-row justify-start items-center">
         <a
           :href="$props.project.sourceCode"
@@ -49,6 +55,15 @@
           <i class="bx bx-link-external"></i>
           Live Demo
         </a>
+      </div>
+      <div class="flex flex-row flex-wrap justify-start items-center">
+        <h6
+          v-for="tech in $props.project.techStack"
+          :key="tech"
+          class="px-1.5 py-0.5 mr-2 mb-2 rounded-md bg-emerald-200 text-sm"
+        >
+          {{ tech }}
+        </h6>
       </div>
     </div>
   </div>

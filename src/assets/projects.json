@@ -4,27 +4,56 @@
     "title": "Plantrade",
     "description": "An online peer-to-peer platform for buying and selling houseplants",
     "sourceCode": "https://bit.ly/plantrade-github",
-    "liveDemo": "https://bit.ly/plantrade-app"
+    "liveDemo": "https://bit.ly/plantrade-app",
+    "techStack": ["Vue", "Vuex", "Vuesax", "Express", "Node.js", "PostgreSQL", "Sequelize", "JWT", "AWS S3", "Stripe", "REST", "Heroku"],
+    "features": [
+      "displays listing information publicly, including listing title, description, price, and plant species, through a Vue app, state managed with Vuex and using components from Vuesax",
+      "securely registers and authenticates users with JWT",
+      "leverages a search algorithm that queries by listing titles, descriptions, and plant species",
+      "enables authenticated users to add items to cart, made possible with a relational PostgreSQL database",
+      "allows authenticated users to post listings with images, stored in an AWS S3 bucket",
+      "generates a secure stripe-powered checkout session, with listing information filtered from a Node.js and Express server"
+    ]
   },
   {
     "image": "https://plantrade.s3.us-east-2.amazonaws.com/reviewr.png",
     "title": "Reviewr",
     "description": "A social networking site collaboratively built around user generated music & album reviews",
     "sourceCode": "https://bit.ly/reviewr-github",
-    "liveDemo": "https://bit.ly/reviewr-app"
+    "liveDemo": "https://bit.ly/reviewr-app",
+    "techStack": ["React", "Express", "Node.js", "PostgreSQL", "Sequelize", "JWT", "Deezer API"],
+    "features": [
+      "displays album reviews on a feed built with React",
+      "securely authenticates users with JWT verified by a Node.js and Express server",
+      "utilizes a third-party music API for albums, album information, and music previews",
+      "allows full CRUD (Create, Read, Update, Delete) operation on user-submitted reviews",
+      "dynamically calculates album average score based on all user-submitted reviews, stored in a relational PostgreSQL database"
+    ]
   },
   {
     "image": "https://plantrade.s3.us-east-2.amazonaws.com/spacex-flights.png",
     "title": "SpaceX Flights",
-    "description": "An online peer-to-peer platform for buying and selling houseplants",
+    "description": "An inter-planetary flight booking system inspired by and designed for SpaceX",
     "sourceCode": "https://bit.ly/spacex-flights-github",
-    "liveDemo": "https://bit.ly/spacex-flights-app"
+    "liveDemo": "https://bit.ly/spacex-flights-app",
+    "techStack": ["React", "Express", "Node.js", "MongoDB", "Mongoose"],
+    "features": [
+      "displays flights, flight information and ticket information on a React front-end connected to a Node.js and express back-end",
+      "search algorithm queries either flight origin, flight destination, or both, based on data stored in a MongoDB cloud database",
+      "dynamically calculates ticket prices based on flight duration and flight privileges (economy, business, first)",
+      "generates a unique ticket identified and verifiable by a QR code"
+    ]
   },
   {
     "image": "https://plantrade.s3.us-east-2.amazonaws.com/ilovehue.png",
     "title": "I Love Hue",
     "description": "An inter-planetary flight booking system inspired by and designed for SpaceX",
     "sourceCode": "https://bit.ly/ilovehue-github",
-    "liveDemo": "https://bit.ly/ilovehue-app"
+    "liveDemo": "https://bit.ly/ilovehue-app",
+    "techStack": ["HTML5", "CSS3", "Vanilla JS", "ES6+"],
+    "features": [
+      "allows authenticated users to post listings with images, stored in an AWS S3 bucket",
+      "generates a secure stripe-powered checkout session, with listing information filtered from a Node.js and Express server"
+    ]
   }
 ]
