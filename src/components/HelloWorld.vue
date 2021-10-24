@@ -3,8 +3,19 @@
     <h3 class="text-xl font-medium">Hey there! My name is</h3>
     <h1 class="text-5xl font-bold text-amber-100 underline">Neil Italia.</h1>
     <p id="typeit" class="text-xl text-amber-400 w-96"></p>
-    <div>
-      <a href="" target="_blank"><i class="bx bxl-github"></i></a>
+    <div class="flex flex-row justify-start items-center text-3xl mt-16">
+      <a href="https://github.com/neilitalia" target="_blank">
+        <i class="bx bxl-github"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/neilitalia/" target="_blank">
+        <i class="bx bxl-linkedin-square"></i>
+      </a>
+      <a href="https://github.com/neilitalia" target="_blank">
+        <i class="bx bx-mail-send"></i>
+      </a>
+      <a href="https://github.com/neilitalia" target="_blank">
+        <i class="bx bx-phone"></i>
+      </a>
     </div>
   </div>
 </template>

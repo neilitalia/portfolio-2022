@@ -8,9 +8,18 @@
       options: $props.intersectionOptions,
     }"
   >
-    <h1 class="text-5xl text-amber-100 font-bold mt-24">
-      This is an about page
-    </h1>
+    <h1 class="text-5xl text-amber-100 font-bold mt-24 my-5">About me</h1>
+    <p class="text-xl text-amber-400 w-96 my-5">
+      I'm a Software Engineer with experience as a SWE Intern for a
+      multinational company and as a Web Developer Volunteer for a Philippine
+      non-profit.
+    </p>
+    <p class="text-xl text-amber-400 w-96 my-5">
+      With my background in the service industry as a restaurant server and my
+      client-facing experience, I want to make digital customer experiences more
+      engaging, accessible, and memorable through efficient system design — from
+      front-end interfaces to back-end business logic.
+    </p>
   </div>
 </template>
 
