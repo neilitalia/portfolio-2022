@@ -1,7 +1,7 @@
 <template>
   <div
     id="home"
-    class="home flex flex-col justify-center items-center h-screen"
+    class="home flex flex-col justify-center items-flex-start h-screen"
     v-waypoint="{
       active: true,
       callback: onWaypoint,
