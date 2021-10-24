@@ -5,7 +5,7 @@
     "description": "An online peer-to-peer platform for buying and selling houseplants",
     "sourceCode": "https://bit.ly/plantrade-github",
     "liveDemo": "https://bit.ly/plantrade-app",
-    "techStack": ["Vue", "Vuex", "Vuesax", "Express", "Node.js", "PostgreSQL", "Sequelize", "JWT", "AWS S3", "Stripe", "REST", "Heroku"],
+    "techStack": ["Vue", "Vuex", "Vuesax", "Express", "Node.js", "PostgreSQL", "Sequelize", "JWT", "AWS S3", "Stripe", "REST"],
     "features": [
       "displays listing information publicly, including listing title, description, price, and plant species, through a Vue app, state managed with Vuex and using components from Vuesax",
       "securely registers and authenticates users with JWT",
@@ -47,13 +47,15 @@
   {
     "image": "https://plantrade.s3.us-east-2.amazonaws.com/ilovehue.png",
     "title": "I Love Hue",
-    "description": "An inter-planetary flight booking system inspired by and designed for SpaceX",
+    "description": "A clone of the award-winning color-sorting mobile game 'I Love Hue', recreated with HTML, CSS and vanilla JavaScript.",
     "sourceCode": "https://bit.ly/ilovehue-github",
     "liveDemo": "https://bit.ly/ilovehue-app",
-    "techStack": ["HTML5", "CSS3", "Vanilla JS", "ES6+"],
+    "techStack": ["HTML5", "CSS3", "JavaScript", "ES6+ Syntax", "Cookies"],
     "features": [
-      "allows authenticated users to post listings with images, stored in an AWS S3 bucket",
-      "generates a secure stripe-powered checkout session, with listing information filtered from a Node.js and Express server"
+      "allows users to switch between light and dark mode",
+      "tracks current player and score with cookies",
+      "generates a randomized color grid for each puzzle",
+      "dynamically renders puzzles based on URL parameters"
     ]
   }
 ]

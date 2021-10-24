@@ -75,4 +75,14 @@ export default Vue.extend({
   left: 0;
   transition: all 0.3s ease;
 }
+
+::-moz-selection {
+  color: #1f1200;
+  background: #a7f3d0;
+}
+
+::selection {
+  color: #1f1200;
+  background: #a7f3d0;
+}
 </style>

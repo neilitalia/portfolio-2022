@@ -82,7 +82,7 @@ export default {
 
 <style scoped>
 .navbar-gradient {
-  transition: all 0.15s ease-in-out;
+  transition: background-position 0.15s ease-in-out;
   background: radial-gradient(
     100% 50% at 0% 50%,
     rgba(5, 150, 150, 0.479) 0%,
@@ -93,5 +93,19 @@ export default {
 }
 .navbar-gradient:hover {
   background-position: 0px;
+}
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.3s ease;
+}
+.fade-enter,
+.fade-leave-active {
+  opacity: 0;
+}
+.view-item {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  transition: all 0.3s ease;
 }
 </style>
