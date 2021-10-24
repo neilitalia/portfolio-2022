@@ -1,10 +1,22 @@
 <template>
   <div id="app" class="bg-gradient-to-b from-darkestBlue to-darkTeal h-screen">
-    <NavBar />
-    <Home />
-    <About />
-    <Projects />
-    <Contact />
+    <NavBar :activeSection="activeSection" />
+    <Home
+      @updateActiveSection="updateActiveSection"
+      :intersectionOptions="intersectionOptions"
+    />
+    <About
+      @updateActiveSection="updateActiveSection"
+      :intersectionOptions="intersectionOptions"
+    />
+    <Projects
+      @updateActiveSection="updateActiveSection"
+      :intersectionOptions="intersectionOptions"
+    />
+    <Contact
+      @updateActiveSection="updateActiveSection"
+      :intersectionOptions="intersectionOptions"
+    />
   </div>
 </template>
 
@@ -18,6 +30,19 @@ import Contact from "@/views/Contact.vue";
 
 export default Vue.extend({
   name: "App",
+  data: () => ({
+    activeSection: "Home",
+    intersectionOptions: {
+      root: null,
+      rootMargin: "0px 0px 0px 0px",
+      threshold: [0.25, 0.75], // [0.25, 0.75] if you want a 25% offset!
+    },
+  }),
+  methods: {
+    updateActiveSection(payload) {
+      this.activeSection = payload;
+    },
+  },
   components: {
     NavBar,
     Home,

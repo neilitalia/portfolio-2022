@@ -34,7 +34,11 @@
         font-extrabold
       "
     >
-      <i class="bx bx-chevron-right text-2xl font-extrabold"></i>
+      <i
+        v-if="$props.activeSection === link.text"
+        class="bx bxs-chevrons-right text-xl font-extrabold"
+      ></i>
+      <i v-else class="bx bx-chevron-right text-2xl font-extrabold"></i>
       {{ link.text }}
     </router-link>
   </div>
@@ -43,6 +47,9 @@
 <script>
 export default {
   name: "NavBar",
+  props: {
+    activeSection: String,
+  },
   // eslint-disable-next-line
   data() {
     return {

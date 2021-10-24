@@ -1,5 +1,13 @@
 <template>
-  <div id="projects" class="flex flex-col justify-start items-center h-screen">
+  <div
+    id="projects"
+    class="flex flex-col justify-start items-center h-screen"
+    v-waypoint="{
+      active: true,
+      callback: onWaypoint,
+      options: $props.intersectionOptions,
+    }"
+  >
     <h1 class="text-5xl text-amber-100 font-bold text-center mt-24">
       Projects
     </h1>
@@ -9,13 +17,21 @@
   </div>
 </template>
 
-<script lang="ts">
+<script>
 import Vue from "vue";
 import ProjectCard from "@/components/ProjectCard.vue";
 
 export default Vue.extend({
   name: "Projects",
   components: { ProjectCard },
+  props: ["intersectionOptions"],
+  methods: {
+    onWaypoint: function (args) {
+      if (args.going === this.$waypointMap.GOING_IN) {
+        this.$emit("updateActiveSection", "Projects");
+      }
+    },
+  },
 });
 </script>
 
