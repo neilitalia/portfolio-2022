@@ -10,7 +10,7 @@
         Hello World! My name is
       </h3>
       <h1 class="text-5xl font-bold text-amber-100 underline">Neil Italia.</h1>
-      <p id="typeit" class="text-xl lg:text-2xl text-amber-400 w-60 mt-5"></p>
+      <p id="typeit" class="text-xl lg:text-2xl text-amber-400 w-72 mt-5"></p>
       <!-- <div class="flex flex-row justify-start items-center text-3xl mt-16">
         <a href="https://github.com/neilitalia" target="_blank">
           <i class="bx bxl-github"></i>
@@ -42,28 +42,34 @@ export default Vue.extend({
   mounted() {
     new TypeIt("#typeit", {
       waitUntilVisible: true,
-      speed: 75,
+      speed: 50,
+      deleteSpeed: 20,
+      lifeLike: true,
       loop: true,
       cursor: true,
     })
-      .type("I am a Software Engineer", { delay: 500 })
+      .type("I am a Software Engineer", { delay: 800 })
       .delete("Engineer".length)
-      .type("Developer", { delay: 500 })
+      .type("Developer", { delay: 800 })
       .move(" Developer".length * -1)
       .delete("Software".length)
-      .type("Full-Stack", { delay: 500 })
-      .move(null, { to: "END" })
+      .type("Full-Stack", { delay: 800 })
+      .move(null, { to: "END", instant: true })
       .delete("Full-Stack Developer".length)
-      .type("UX/UI Designer", { delay: 500 })
+      .type("UX/UI Designer", { delay: 800 })
       .delete("UX/UI Designer".length)
-      .type("Front-End Rockstar", { delay: 500 })
+      .type("Front-End Rockstar", { delay: 800 })
       .delete("Front-End Rockstar".length)
-      .type("Back-End Ninja", { delay: 500 })
-      .delete("Back-End Ninja".length)
-      .type("Open-Source Enthusiast", { delay: 500 })
-      .delete("Open-Source Enthusiast".length)
-      .type("Designer + Developer Unicorn", { delay: 500 })
-      .delete("Designer + Developer Unicorn".length)
+      .type("Back-End Ninja", { delay: 800 })
+      .delete(" Back-End Ninja".length)
+      .type("n Open-Source Enthusiast", { delay: 800 })
+      .delete("n Open-Source Enthusiast".length)
+      .type(" Designer + Developer Unicorn", { delay: 800 })
+      .delete(" Designer + Developer Unicorn".length)
+      .type(" Web Developer Volunteer", { delay: 1000 })
+      .delete("a Web Developer Volunteer".length)
+      .type("vaccinated 💉", { delay: 800 })
+      .delete("vaccinated 💉".length)
       .go();
   },
   data() {
