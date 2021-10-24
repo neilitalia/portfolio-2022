@@ -1,21 +1,17 @@
 <template>
   <div
-    class="
-      text-amber-100
-      mt-40
-      flex
-      md:flex-row
-      sm:flex-col
-      justify-center
-      items-center
-    "
+    class="text-amber-100 flex flex-col lg:flex-row justify-center items-center"
   >
-    <DevIllustration class="w-3/6" />
-    <div>
-      <h3 class="text-xl font-medium">Hey there! My name is</h3>
+    <DevIllustration
+      class="w-5/6 mb-10 mt-56 lg:w-3/6 lg:mt-0 lg:mr-10 lg:mb-10 md:w-96"
+    />
+    <div class="flex flex-col justify-start lg:h-full">
+      <h3 class="text-xl lg:text-2xl font-medium lg:mt-24">
+        Hello World! My name is
+      </h3>
       <h1 class="text-5xl font-bold text-amber-100 underline">Neil Italia.</h1>
-      <p id="typeit" class="text-xl text-amber-400 w-80"></p>
-      <div class="flex flex-row justify-start items-center text-3xl mt-16">
+      <p id="typeit" class="text-xl lg:text-2xl text-amber-400 w-60 mt-5"></p>
+      <!-- <div class="flex flex-row justify-start items-center text-3xl mt-16">
         <a href="https://github.com/neilitalia" target="_blank">
           <i class="bx bxl-github"></i>
         </a>
@@ -28,7 +24,7 @@
         <a href="https://github.com/neilitalia" target="_blank">
           <i class="bx bx-phone"></i>
         </a>
-      </div>
+      </div> -->
     </div>
   </div>
 </template>

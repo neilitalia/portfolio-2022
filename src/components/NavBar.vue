@@ -2,12 +2,16 @@
   <div
     id="nav"
     class="
-      pl-6
+      pl-0
+      md:pl-4
       flex flex-col
-      items-flex-start
+      items-center
+      md:items-flex-start
       justify-center
       text-xl
       h-screen
+      w-full
+      md:w-auto
       fixed
       top-0
       left-0
@@ -82,17 +86,23 @@ export default {
 
 <style scoped>
 .navbar-gradient {
-  transition: background-position 0.15s ease-in-out;
-  background: radial-gradient(
-    100% 50% at 0% 50%,
-    rgba(5, 150, 150, 0.479) 0%,
-    rgba(5, 150, 105, 0) 100%
-  );
-  background-position: -200px;
-  background-repeat: no-repeat;
+  background: #042229;
 }
-.navbar-gradient:hover {
-  background-position: 0px;
+
+@media (min-width: 768px) {
+  .navbar-gradient {
+    transition: background-position 0.15s ease-in-out;
+    background: radial-gradient(
+      100% 50% at 0% 50%,
+      rgba(5, 150, 150, 0.479) 0%,
+      rgba(5, 150, 105, 0) 100%
+    );
+    background-position: -200px;
+    background-repeat: no-repeat;
+  }
+  .navbar-gradient:hover {
+    background-position: 0px;
+  }
 }
 .fade-enter-active,
 .fade-leave-active {
