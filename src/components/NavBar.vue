@@ -31,6 +31,7 @@
         flex flex-row
         justify-flex-start
         items-center
+        font-extrabold
       "
     >
       <i class="bx bx-chevron-right text-2xl font-extrabold"></i>

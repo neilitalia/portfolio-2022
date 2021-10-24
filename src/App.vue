@@ -34,10 +34,6 @@ export default Vue.extend({
   -moz-osx-font-smoothing: grayscale;
 }
 
-#nav a {
-  font-weight: bold;
-}
-
 .fade-enter-active,
 .fade-leave-active {
   transition: opacity 0.3s ease;
