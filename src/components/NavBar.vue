@@ -4,19 +4,28 @@
     class="
       pl-0
       md:pl-4
-      flex flex-col
+      pb-10
+      md:pb-0
+      flex flex-row
+      md:flex-col
       items-center
       md:items-flex-start
-      justify-center
+      justify-evenly
+      md:justify-center
       text-xl
-      h-screen
+      h-12
+      md:h-screen
       w-full
       md:w-auto
       fixed
-      top-0
+      bottom-0
+      md:top-0
       left-0
       z-10
       navbar-gradient
+      transition
+      duration-200
+      ease-in-out
     "
   >
     <router-link
@@ -25,7 +34,8 @@
       :to="link.to"
       class="
         py-4
-        text-emerald-400
+        text-emerald-400 text-sm
+        md:text-xl
         transform
         hover:text-amber-100 hover:translate-x-5
         transition
@@ -40,9 +50,25 @@
     >
       <i
         v-if="$props.activeSection === link.text"
-        class="bx bxs-chevrons-right text-xl font-extrabold"
+        class="
+          bx
+          bxs-chevrons-right
+          text-xl
+          font-extrabold
+          hidden
+          md:inline-flex
+        "
       ></i>
-      <i v-else class="bx bx-chevron-right text-2xl font-extrabold"></i>
+      <i
+        v-else
+        class="
+          bx bx-chevron-right
+          text-2xl
+          font-extrabold
+          hidden
+          md:inline-flex
+        "
+      ></i>
       {{ link.text }}
     </router-link>
   </div>
@@ -86,7 +112,7 @@ export default {
 
 <style scoped>
 .navbar-gradient {
-  background: #042229;
+  background: #05272d;
 }
 
 @media (min-width: 768px) {
