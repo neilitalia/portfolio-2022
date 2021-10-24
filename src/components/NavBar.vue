@@ -4,8 +4,6 @@
     class="
       pl-0
       md:pl-4
-      pb-10
-      md:pb-0
       flex flex-row
       md:flex-col
       items-center
@@ -32,8 +30,24 @@
       v-for="link in links"
       :key="link.to"
       :to="link.to"
-      class="
-        py-4
+      :class="
+        link.text === $props.activeSection
+          ? `py-4
+          text-amber-100
+        md:text-emerald-400 text-sm
+        md:text-xl
+        transform
+        hover:text-amber-100
+        md:hover:translate-x-5
+        transition
+        duration-150
+        ease-in-out
+        navbar-link
+        flex flex-row
+        justify-flex-start
+        items-center
+        font-extrabold`
+          : `py-4
         text-emerald-400 text-sm
         md:text-xl
         transform
@@ -45,7 +59,7 @@
         flex flex-row
         justify-flex-start
         items-center
-        font-extrabold
+        font-extrabold`
       "
     >
       <i
