@@ -12,7 +12,11 @@
       Projects
     </h1>
     <div class="flex flex-col max-w-xl justify-between align-top">
-      <ProjectCard v-for="i in 6" :key="i" />
+      <ProjectCard
+        v-for="project in projects"
+        :key="project.title"
+        :project="project"
+      />
     </div>
   </div>
 </template>
@@ -20,11 +24,15 @@
 <script>
 import Vue from "vue";
 import ProjectCard from "@/components/ProjectCard.vue";
+import projects from "@/assets/projects.json";
 
 export default Vue.extend({
   name: "Projects",
   components: { ProjectCard },
   props: ["intersectionOptions"],
+  data: () => ({
+    projects: projects,
+  }),
   methods: {
     onWaypoint: function (args) {
       if (args.going === this.$waypointMap.GOING_IN) {

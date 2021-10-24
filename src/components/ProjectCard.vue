@@ -2,10 +2,9 @@
   <div
     class="
       flex flex-col
-      border-2 border-emerald-400 border-opacity-50
       bg-white
       rounded-xl
-      my-3
+      my-4
       transform
       hover:scale-105 hover:shadow-2xl
       transition
@@ -13,15 +12,15 @@
       ease-in-out
     "
   >
-    <div>
-      <img src="https://placebear.com/640/360" alt="" class="rounded-t-lg" />
+    <div class="bg-emerald-800">
+      <img :src="$props.project.image" alt="" class="rounded-t-lg" />
     </div>
     <div class="p-5 text-emerald-900">
-      <h1 class="text-xl font-bold">Card Title</h1>
-      <h3 class="text-lg">Card Description</h3>
+      <h1 class="text-xl font-bold">{{ $props.project.title }}</h1>
+      <h3 class="text-lg">{{ $props.project.description }}</h3>
       <div class="flex flex-row justify-start items-center">
         <a
-          :href="'#'"
+          :href="$props.project.sourceCode"
           target="_blank"
           class="
             text-lg
@@ -36,7 +35,7 @@
           Source Code
         </a>
         <a
-          :href="'#'"
+          :href="$props.project.liveDemo"
           target="_blank"
           class="
             text-lg
@@ -59,5 +58,6 @@
 import Vue from "vue";
 export default Vue.extend({
   name: "ProjectCard",
+  props: ["project"],
 });
 </script>
