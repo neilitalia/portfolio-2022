@@ -1,0 +1,30 @@
+[
+  {
+    "image": "@/assets/plantrade.png",
+    "title": "Plantrade",
+    "description": "An online peer-to-peer platform for buying and selling houseplants",
+    "sourceCode": "https://bit.ly/plantrade-github",
+    "liveDemo": "https://bit.ly/plantrade-app"
+  },
+  {
+    "image": "@/assets/reviewr.png",
+    "title": "Reviewr",
+    "description": "A social networking site collaboratively built around user generated music & album reviews",
+    "sourceCode": "https://bit.ly/reviewr-github",
+    "liveDemo": "https://bit.ly/reviewr-app"
+  },
+  {
+    "image": "@/assets/spacex-flights.png",
+    "title": "SpaceX Flights",
+    "description": "An online peer-to-peer platform for buying and selling houseplants",
+    "sourceCode": "https://bit.ly/spacex-flights-github",
+    "liveDemo": "https://bit.ly/spacex-flights-app"
+  },
+  {
+    "image": "@/assets/ilovehue.png",
+    "title": "I Love Hue",
+    "description": "An inter-planetary flight booking system inspired by and designed for SpaceX",
+    "sourceCode": "https://bit.ly/ilovehue-github",
+    "liveDemo": "https://bit.ly/ilovehue-app"
+  }
+]
