@@ -18,13 +18,14 @@
         items-center
       "
     >
-      <div class="flex flex-col justify-start items-center lg:h-full">
+      <div class="flex flex-col justify-start items-center lg:h-full md:w-5/6">
         <h3 class="text-center text-2xl lg:text-2xl font-medium mt-10 lg:mt-24">
           Let's work on something cool together.
         </h3>
         <div
           class="
             flex flex-row flex-wrap
+            md:flex-col
             justify-center
             items-center
             text-xl
@@ -34,7 +35,7 @@
           <a
             href="https://drive.google.com/file/d/1dlPrJps-WJxt5IFT67SdjzaIZlbwx3rM/view"
             target="_blank"
-            class="mx-3 flex flex-row justify-center items-center"
+            class="mx-3 flex flex-row justify-center items-center md:mb-3"
           >
             <i class="bx bxs-file-pdf text-3xl"></i>
             Résumé
@@ -42,7 +43,7 @@
           <a
             href="https://github.com/neilitalia"
             target="_blank"
-            class="mx-3 flex flex-row justify-center items-center"
+            class="mx-3 flex flex-row justify-center items-center md:mb-3"
           >
             <i class="bx bxl-github text-3xl"></i>
             GitHub
@@ -50,21 +51,21 @@
           <a
             href="https://www.linkedin.com/in/neilitalia/"
             target="_blank"
-            class="mx-3 flex flex-row justify-center items-center"
+            class="mx-3 flex flex-row justify-center items-center md:mb-3"
           >
             <i class="bx bxl-linkedin-square text-3xl"></i>
             LinkedIn
           </a>
           <a
             href="mailto:hello@neilitalia.dev"
-            class="mx-3mx-3 flex flex-row justify-center items-center"
+            class="mx-3mx-3 flex flex-row justify-center items-center md:mb-3"
           >
             <i class="bx bx-mail-send text-3xl"></i>
             Email
           </a>
           <a
             href="tel:817-751-2462"
-            class="mx-3 flex flex-row justify-center items-center"
+            class="mx-3 flex flex-row justify-center items-center md:mb-3"
           >
             <i class="bx bx-phone text-3xl"></i>
             Phone
@@ -72,7 +73,7 @@
         </div>
       </div>
       <CollabIllustration
-        class="mb-10 mt-16 w-5/6 md:w-full lg:mt-10 lg:ml-10"
+        class="mb-10 mt-16 w-5/6 md:w-full lg:m2-10 lg:ml-10"
       />
     </div>
   </div>

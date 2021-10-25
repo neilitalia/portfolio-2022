@@ -3,21 +3,21 @@
     id="nav"
     class="
       pl-0
-      md:pl-4
+      lg:pl-4
       flex flex-row
-      md:flex-col
+      lg:flex-col
       items-center
-      md:items-flex-start
+      lg:items-flex-start
       justify-evenly
-      md:justify-center
+      lg:justify-center
       text-xl
       h-12
-      md:h-screen
+      lg:h-screen
       w-full
-      md:w-auto
+      lg:w-auto
       fixed
       bottom-0
-      md:top-0
+      lg:top-0
       left-0
       z-10
       navbar-gradient
@@ -34,12 +34,12 @@
         link.text === $props.activeSection
           ? `py-4
           text-amber-100
-        md:text-emerald-400 text-sm
-        md:text-xl
+        lg:text-emerald-400 text-sm
+        lg:text-xl
         transform
         hover:text-amber-100
         hover:translate-x-0
-        md:hover:translate-x-5
+        lg:hover:translate-x-5
         transition
         duration-150
         ease-in-out
@@ -50,11 +50,11 @@
         font-extrabold`
           : `py-4
         text-emerald-400 text-sm
-        md:text-xl
+        lg:text-xl
         transform
         hover:text-amber-100 
         hover:translate-x-0
-        md:hover:translate-x-5
+        lg:hover:translate-x-5
         transition
         duration-150
         ease-in-out
@@ -73,7 +73,7 @@
           text-xl
           font-extrabold
           hidden
-          md:inline-flex
+          lg:inline-flex
         "
       ></i>
       <i
@@ -83,7 +83,7 @@
           text-2xl
           font-extrabold
           hidden
-          md:inline-flex
+          lg:inline-flex
         "
       ></i>
       {{ link.text }}
@@ -95,7 +95,10 @@
 export default {
   name: "NavBar",
   props: {
-    activeSection: String,
+    activeSection: {
+      type: String,
+      default: "Home",
+    },
   },
   // eslint-disable-next-line
   data() {
@@ -114,10 +117,6 @@ export default {
           text: "Projects",
         },
         {
-          to: "/#resume",
-          text: "Resume",
-        },
-        {
           to: "/#contact",
           text: "Contact",
         },
@@ -132,7 +131,7 @@ export default {
   background: #05272d;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .navbar-gradient {
     transition: background-position 0.15s ease-in-out;
     background: radial-gradient(
