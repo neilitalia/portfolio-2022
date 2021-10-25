@@ -22,31 +22,57 @@
         <h3 class="text-center text-2xl lg:text-2xl font-medium mt-10 lg:mt-24">
           Let's work on something cool together.
         </h3>
-        <div class="flex flex-row justify-start items-center text-2xl mt-16">
-          <a href="https://github.com/neilitalia" target="_blank" class="mx-3">
-            <i class="bx bxl-github"></i>
+        <div
+          class="
+            flex flex-row flex-wrap
+            justify-center
+            items-center
+            text-xl
+            mt-14
+          "
+        >
+          <a
+            href="https://drive.google.com/file/d/1dlPrJps-WJxt5IFT67SdjzaIZlbwx3rM/view"
+            target="_blank"
+            class="mx-3 flex flex-row justify-center items-center"
+          >
+            <i class="bx bxs-file-pdf text-3xl"></i>
+            Résumé
+          </a>
+          <a
+            href="https://github.com/neilitalia"
+            target="_blank"
+            class="mx-3 flex flex-row justify-center items-center"
+          >
+            <i class="bx bxl-github text-3xl"></i>
             GitHub
           </a>
           <a
             href="https://www.linkedin.com/in/neilitalia/"
             target="_blank"
-            class="mx-3"
+            class="mx-3 flex flex-row justify-center items-center"
           >
-            <i class="bx bxl-linkedin-square"></i>
+            <i class="bx bxl-linkedin-square text-3xl"></i>
             LinkedIn
           </a>
-          <a href="mailto:hello@neilitalia.dev" class="mx-3">
-            <i class="bx bx-mail-send"></i>
+          <a
+            href="mailto:hello@neilitalia.dev"
+            class="mx-3mx-3 flex flex-row justify-center items-center"
+          >
+            <i class="bx bx-mail-send text-3xl"></i>
             Email
           </a>
-          <a href="tel:817-751-2462" class="mx-3">
-            <i class="bx bx-phone"></i>
+          <a
+            href="tel:817-751-2462"
+            class="mx-3 flex flex-row justify-center items-center"
+          >
+            <i class="bx bx-phone text-3xl"></i>
             Phone
           </a>
         </div>
       </div>
       <CollabIllustration
-        class="mb-10 mt-16 lg:w-3/6 lg:mt-0 lg:mr-10 lg:mb-10 md:w-96"
+        class="mb-10 mt-16 w-5/6 lg:w-3/6 lg:mt-0 lg:mr-10 lg:mb-10 md:w-96"
       />
     </div>
   </div>
