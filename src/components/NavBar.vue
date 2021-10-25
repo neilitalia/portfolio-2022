@@ -11,7 +11,7 @@
       justify-evenly
       lg:justify-center
       text-xl
-      h-12
+      h-16
       lg:h-screen
       w-full
       lg:w-auto
@@ -20,10 +20,10 @@
       lg:top-0
       left-0
       z-10
-      navbar-gradient
       transition
       duration-200
       ease-in-out
+      navbar-gradient
     "
   >
     <router-link
@@ -128,7 +128,8 @@ export default {
 
 <style scoped>
 .navbar-gradient {
-  background: #05272d;
+  background: rgba(0, 58, 70, 0.6);
+  backdrop-filter: blur(5px);
 }
 
 @media (min-width: 1024px) {

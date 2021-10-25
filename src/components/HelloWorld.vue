@@ -7,10 +7,10 @@
         w-5/6
         mb-10
         mt-28
+        md:w-5/6
         lg:w-2/6
         xl:w-3/6
         lg:mt-0 lg:mr-10 lg:mb-10
-        md:w-96
       "
     />
     <div class="flex flex-col justify-start h-1/2 md:h-full">
@@ -41,7 +41,7 @@
             ease-in-out
           "
         >
-          See My Projects
+          Featured Works
         </router-link>
         <router-link
           to="/#contact"
