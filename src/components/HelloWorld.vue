@@ -3,14 +3,54 @@
     class="text-amber-100 flex flex-col lg:flex-row justify-center items-center"
   >
     <DevIllustration
-      class="w-5/6 mb-10 mt-56 lg:w-3/6 lg:mt-0 lg:mr-10 lg:mb-10 md:w-96"
+      class="w-5/6 mb-10 mt-28 lg:w-3/6 lg:mt-0 lg:mr-10 lg:mb-10 md:w-96"
     />
     <div class="flex flex-col justify-start lg:h-full">
       <h3 class="text-xl lg:text-2xl font-medium lg:mt-24">
         Hello World! My name is
       </h3>
-      <h1 class="text-5xl font-bold text-amber-100 underline">Neil Italia.</h1>
+      <h1 class="text-5xl font-bold text-amber-100 underline mt-3">
+        Neil Italia.
+      </h1>
       <p id="typeit" class="text-xl lg:text-2xl text-amber-400 w-72 mt-5"></p>
+      <div class="mt-auto mb-72 flex flex-row justify-flex-start items-center">
+        <router-link
+          to="/#projects"
+          class="
+            p-2
+            border-2
+            rounded-md
+            border-emerald-400
+            hover:border-emerald-600 hover:bg-emerald-600
+            text-emerald-400
+            hover:text-amber-100
+            mr-5
+            transition
+            duration-150
+            ease-in-out
+          "
+        >
+          See My Projects
+        </router-link>
+        <router-link
+          to="/#projects"
+          class="
+            p-2
+            border-2
+            rounded-md
+            border-emerald-400
+            hover:border-emerald-600 hover:bg-emerald-600
+            text-emerald-400
+            hover:text-amber-100
+            mr-5
+            transition
+            duration-150
+            ease-in-out
+          "
+        >
+          Get In Touch
+        </router-link>
+      </div>
     </div>
   </div>
 </template>

@@ -38,6 +38,7 @@
         md:text-xl
         transform
         hover:text-amber-100
+        hover:translate-x-0
         md:hover:translate-x-5
         transition
         duration-150
@@ -51,7 +52,9 @@
         text-emerald-400 text-sm
         md:text-xl
         transform
-        hover:text-amber-100 hover:translate-x-5
+        hover:text-amber-100 
+        hover:translate-x-0
+        md:hover:translate-x-5
         transition
         duration-150
         ease-in-out

@@ -29,6 +29,7 @@ module.exports = {
       "@vue/prettier/@typescript-eslint"
     ]
   }],
+  ignorePatterns: ["temp.js", "/node_modules", "/dist"],
   rules: {
     "no-console": process.env.NODE_ENV === "production" ? "warn" : "off",
     "no-debugger": process.env.NODE_ENV === "production" ? "warn" : "off",

@@ -13,7 +13,7 @@
       class="
         text-amber-100
         flex flex-col
-        lg:flex-row
+        md:flex-row
         justify-center
         items-center
       "
@@ -72,7 +72,7 @@
         </div>
       </div>
       <CollabIllustration
-        class="mb-10 mt-16 w-5/6 lg:w-3/6 lg:mt-0 lg:mr-10 lg:mb-10 md:w-96"
+        class="mb-10 mt-16 w-5/6 md:w-full lg:mt-10 lg:ml-10"
       />
     </div>
   </div>
