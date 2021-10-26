@@ -61,6 +61,23 @@
           <i class="bx bx-link-external text-2xl mr-1"></i>
           Live Demo
         </a>
+        <div
+          v-if="$props.project.demoUser && $props.project.demoPassword"
+          class="flex flex-col justify-center items-flex-start"
+        >
+          <h3>
+            Demo username:
+            <span class="underline">
+              {{ $props.project.demoUser }}
+            </span>
+          </h3>
+          <h3>
+            Demo password:
+            <span class="underline">
+              {{ $props.project.demoPassword }}
+            </span>
+          </h3>
+        </div>
       </div>
       <h3 class="text-lg mb-3">{{ $props.project.description }}</h3>
       <h3 class="text-lg">Features:</h3>

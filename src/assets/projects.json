@@ -5,6 +5,8 @@
     "description": "An online peer-to-peer platform for buying and selling houseplants",
     "sourceCode": "https://bit.ly/plantrade-github",
     "liveDemo": "https://bit.ly/plantrade-app",
+    "demoUser": "demo",
+    "demoPassword": "plantrade-demo",
     "techStack": ["Vue", "Vuex", "Vuesax", "Express", "Node.js", "PostgreSQL", "Sequelize", "JWT", "AWS S3", "Stripe", "REST"],
     "features": [
       "displays listing information publicly, including listing title, description, price, and plant species, through a Vue app, state managed with Vuex and using components from Vuesax",
@@ -21,6 +23,8 @@
     "description": "A social networking site collaboratively built around user generated music & album reviews",
     "sourceCode": "https://bit.ly/reviewr-github",
     "liveDemo": "https://bit.ly/reviewr-app",
+    "demoUser": "demo",
+    "demoPassword": "reviewr-demo",
     "techStack": ["React", "Express", "Node.js", "PostgreSQL", "Sequelize", "JWT", "Deezer API", "REST"],
     "features": [
       "displays album reviews on a feed built with React",
