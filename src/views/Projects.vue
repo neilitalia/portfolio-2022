@@ -9,7 +9,7 @@
     }"
   >
     <h1 class="text-5xl text-amber-100 font-bold text-center mt-24">
-      Projects
+      My Projects
     </h1>
     <div class="flex flex-col max-w-xl justify-between align-top">
       <ProjectCard
