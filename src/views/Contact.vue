@@ -33,7 +33,7 @@
           "
         >
           <a
-            href="https://drive.google.com/file/d/1dlPrJps-WJxt5IFT67SdjzaIZlbwx3rM/view"
+            href="https://bit.ly/neilitalia-resume-2022"
             target="_blank"
             class="mx-3 flex flex-row justify-center items-center md:mb-3"
           >
