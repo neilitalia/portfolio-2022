@@ -61,25 +61,30 @@
           <i class="bx bx-link-external text-2xl mr-1"></i>
           Live Demo
         </a>
-        <div
-          v-if="$props.project.demoUser && $props.project.demoPassword"
-          class="flex flex-col justify-center items-flex-start"
-        >
-          <h3>
-            Demo username:
-            <span class="underline">
-              {{ $props.project.demoUser }}
-            </span>
-          </h3>
-          <h3>
-            Demo password:
-            <span class="underline">
-              {{ $props.project.demoPassword }}
-            </span>
-          </h3>
-        </div>
       </div>
-      <h3 class="text-lg mb-3">{{ $props.project.description }}</h3>
+      <h3 class="text-lg mb-3 font-regular">
+        {{ $props.project.description }}
+      </h3>
+      <div
+        v-if="$props.project.demo"
+        class="
+          flex flex-col
+          justify-center
+          items-flex-start
+          mb-3
+          bg-amber-100
+          p-3
+          rounded
+        "
+      >
+        <h2>Try out this app with these demo credentials:</h2>
+        <h3 v-for="item in $props.project.demo" :key="item">
+          {{ Object.keys(item).join() }}:
+          <span class="underline">
+            {{ Object.values(item).join() }}
+          </span>
+        </h3>
+      </div>
       <h3 class="text-lg">Features:</h3>
       <ul class="list-disc list-outside ml-5 mb-3">
         <li v-for="feature in $props.project.features" :key="feature">
