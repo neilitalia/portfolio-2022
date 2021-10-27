@@ -69,6 +69,10 @@
             items-center
             text-base
             border-2 border-emerald-600
+            hover:bg-emerald-200 hover:border-opacity-0
+            transition
+            duration-150
+            ease-in-out
             py-0.5
             px-2
             rounded-md
@@ -86,6 +90,7 @@
             items-center
             text-base
             border-2 border-emerald-600
+            hover:bg-emerald-200 hover:border-opacity-0
             py-0.5
             px-2
             rounded-md
@@ -99,26 +104,29 @@
       <h3 class="text-lg mb-3 font-regular">
         {{ $props.project.description }}
       </h3>
-      <div
-        v-if="$props.project.demo && showDemoCredentials"
-        class="
-          flex flex-col
-          justify-center
-          items-flex-start
-          mb-3
-          bg-amber-100
-          p-3
-          rounded
-        "
-      >
-        <h2>Try out this app with these demo credentials:</h2>
-        <h3 v-for="item in $props.project.demo" :key="item">
-          {{ Object.keys(item).join() }}:
-          <span class="underline">
-            {{ Object.values(item).join() }}
-          </span>
-        </h3>
-      </div>
+      <transition name="fade-credentials">
+        <div
+          v-if="$props.project.demo && showDemoCredentials"
+          class="
+            flex flex-col
+            justify-center
+            items-flex-start
+            mb-3
+            bg-amber-100
+            p-3
+            rounded
+            credentials
+          "
+        >
+          <h2>Try out this app with these demo credentials:</h2>
+          <h3 v-for="item in $props.project.demo" :key="item">
+            {{ Object.keys(item).join() }}:
+            <span class="underline">
+              {{ Object.values(item).join() }}
+            </span>
+          </h3>
+        </div>
+      </transition>
       <h3 class="text-lg">Features:</h3>
       <ul class="list-disc list-outside ml-5 mb-3">
         <li v-for="feature in $props.project.features" :key="feature">
@@ -157,3 +165,21 @@ export default Vue.extend({
   }),
 });
 </script>
+
+<style scoped>
+.fade-credentials-enter-active,
+.fade-credentials-leave-active {
+  transition: opacity 0.3s ease;
+}
+.fade-credentials-enter,
+.fade-credentials-leave-active {
+  opacity: 0;
+  height: 0%;
+}
+.credentials {
+  height: 100%;
+  width: 100%;
+  left: 0;
+  transition: all 0.3s ease;
+}
+</style>
