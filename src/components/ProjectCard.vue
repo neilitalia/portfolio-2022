@@ -61,12 +61,46 @@
           <i class="bx bx-link-external text-2xl mr-1"></i>
           Live Demo
         </a>
+        <button
+          v-if="$props.project.demo && !showDemoCredentials"
+          class="
+            flex flex-row
+            justify-center
+            items-center
+            text-base
+            border-2 border-emerald-600
+            py-0.5
+            px-2
+            rounded-md
+          "
+          @click="showDemoCredentials = true"
+        >
+          <i class="bx bx-lock-open text-2xl mr-1"></i>
+          Show Demo Credentials
+        </button>
+        <button
+          v-else-if="$props.project.demo && showDemoCredentials"
+          class="
+            flex flex-row
+            justify-center
+            items-center
+            text-base
+            border-2 border-emerald-600
+            py-0.5
+            px-2
+            rounded-md
+          "
+          @click="showDemoCredentials = false"
+        >
+          <i class="bx bx-lock text-2xl mr-1"></i>
+          Hide Demo Credentials
+        </button>
       </div>
       <h3 class="text-lg mb-3 font-regular">
         {{ $props.project.description }}
       </h3>
       <div
-        v-if="$props.project.demo"
+        v-if="$props.project.demo && showDemoCredentials"
         class="
           flex flex-col
           justify-center
@@ -118,5 +152,8 @@ import Vue from "vue";
 export default Vue.extend({
   name: "ProjectCard",
   props: ["project"],
+  data: () => ({
+    showDemoCredentials: false,
+  }),
 });
 </script>
