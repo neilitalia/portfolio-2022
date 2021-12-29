@@ -174,7 +174,7 @@ export default Vue.extend({
 .fade-credentials-enter,
 .fade-credentials-leave-active {
   opacity: 0;
-  height: 0%;
+  transform: translateY(-100px) scaleY(0);
 }
 .credentials {
   height: 100%;
