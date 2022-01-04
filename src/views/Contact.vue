@@ -20,7 +20,7 @@
     >
       <div class="flex flex-col justify-start items-center lg:h-full md:w-5/6">
         <h3 class="text-center text-2xl lg:text-2xl font-medium mt-10 lg:mt-24">
-          Let's work on something cool together.
+          Let's build something impactful together.
         </h3>
         <div
           class="
@@ -33,7 +33,7 @@
           "
         >
           <a
-            href="https://bit.ly/neilitalia-resume-2022"
+            :href="contacts.resume"
             target="_blank"
             class="mx-3 flex flex-row justify-center items-center md:mb-3"
           >
@@ -41,7 +41,7 @@
             Résumé
           </a>
           <a
-            href="https://github.com/neilitalia"
+            :href="contacts.github"
             target="_blank"
             class="mx-3 flex flex-row justify-center items-center md:mb-3"
           >
@@ -49,7 +49,7 @@
             GitHub
           </a>
           <a
-            href="https://www.linkedin.com/in/neilitalia/"
+            :href="contacts.linkedin"
             target="_blank"
             class="mx-3 flex flex-row justify-center items-center md:mb-3"
           >
@@ -57,14 +57,14 @@
             LinkedIn
           </a>
           <a
-            href="mailto:hello@neilitalia.dev"
+            :href="contacts.mail"
             class="mx-3mx-3 flex flex-row justify-center items-center md:mb-3"
           >
             <i class="bx bx-mail-send text-3xl"></i>
             Email
           </a>
           <a
-            href="tel:817-751-2462"
+            :href="contacts.phone"
             class="mx-3 flex flex-row justify-center items-center md:mb-3"
           >
             <i class="bx bx-phone text-3xl"></i>
@@ -82,6 +82,7 @@
 <script>
 import Vue from "vue";
 import CollabIllustration from "@/assets/CollabIllustration.vue";
+import contacts from "@/assets/contacts.json";
 
 export default Vue.extend({
   name: "Contact",
@@ -89,11 +90,9 @@ export default Vue.extend({
     CollabIllustration,
   },
   props: ["intersectionOptions"],
-  data: function () {
-    return {
-      text: "Test",
-    };
-  },
+  data: () => ({
+    contacts,
+  }),
   methods: {
     onWaypoint: function (args) {
       if (args.going === this.$waypointMap.GOING_IN) {
