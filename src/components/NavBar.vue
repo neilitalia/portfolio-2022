@@ -1,30 +1,7 @@
 <template>
   <div
     id="nav"
-    class="
-      pl-0
-      lg:pl-4
-      flex flex-row
-      lg:flex-col
-      items-center
-      lg:items-flex-start
-      justify-evenly
-      lg:justify-center
-      text-xl
-      h-16
-      lg:h-screen
-      w-full
-      lg:w-auto
-      fixed
-      bottom-0
-      lg:top-0
-      left-0
-      z-10
-      transition
-      duration-200
-      ease-in-out
-      navbar-gradient
-    "
+    class="fixed bottom-0 left-0 z-10 flex flex-row items-center w-full h-16 pl-0 text-xl transition duration-200 ease-in-out lg:pl-4 lg:flex-col lg:items-flex-start justify-evenly lg:justify-center lg:h-screen lg:w-auto lg:top-0 navbar-gradient"
   >
     <router-link
       v-for="link in links"
@@ -67,27 +44,19 @@
     >
       <i
         v-if="$props.activeSection === link.text"
-        class="
-          bx
-          bxs-chevrons-right
-          text-xl
-          font-extrabold
-          hidden
-          lg:inline-flex
-        "
+        class="hidden text-xl font-extrabold bx bxs-chevrons-right lg:inline-flex"
       ></i>
       <i
         v-else
-        class="
-          bx bx-chevron-right
-          text-2xl
-          font-extrabold
-          hidden
-          lg:inline-flex
-        "
+        class="hidden text-2xl font-extrabold bx bx-chevron-right lg:inline-flex"
       ></i>
       {{ link.text }}
     </router-link>
+    <a href="https://blog.neilitalia.dev" target="_blank" class="flex flex-row items-center py-4 text-sm font-extrabold transition duration-150 ease-in-out transform text-emerald-400 lg:text-xl hover:text-amber-100 hover:translate-x-0 lg:hover:translate-x-5 navbar-link justify-flex-start">
+      <i
+        class="hidden text-2xl font-extrabold bx bx-chevron-right lg:inline-flex"
+      ></i>
+      Blog</a>
   </div>
 </template>
 
